@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Simple Animated Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio.</a>
+      <nav class="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="banner" id="home">
+        <div class="banner-content">
+          <h3>Hello, I am</h3>
+          <h1>Amarachi Goodness</h1>
+          <h3>And I'm a <span>Software Engineer</span></h3>
+          <p>
+            I have over 2 years experience writing code and building solutions
+            to make the world a better place by simplifying complex task through
+            automation
+          </p>
+          <div class="social-icons">
+            <a href=""><i class='bx bxl-facebook' ></i></i></a>
+            <a href=""><i class="bx bxl-twitter"></i></a>
+            <a href=""><i class="bx bxl-linkedin"></i></a>
+            <a href=""><i class="bx bxl-instagram"></i></a>
+          </div>
+          <button>Download CV</button>
+        </div>
+        <div class="banner-img">
+          <img src="./goodness_profile.jpeg" alt="">
+        </div>
+      </section>
+      <section class="new-section" id="about">
+        <h2 class="title">About Me</h2>
+        <p class="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellendus minima animi quod perferendis libero accusantium, ducimus distinctio provident ipsam harum similique eos! Magnam debitis aspernatur, molestiae beatae fugiat, voluptatum officia itaque perferendis nisi explicabo nemo ipsum corporis saepe natus vero reiciendis harum quae deserunt consequatur tenetur libero autem! Earum.</p>
+        <p class="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellendus minima animi quod perferendis libero accusantium, ducimus distinctio provident ipsam harum similique eos! Magnam debitis aspernatur, molestiae beatae fugiat.</p>
+      </section>
+      <section class="new-section" id="skills">
+        <h2 class="title">My Skills:</h2>
+        <div class="my-skills">
+          <label for="react">React.js:</label>
+          <progress id="react" value="80" max="100">80%</progress>
+        </div>
+        <div class="my-skills">
+          <label for="next">Next.js:</label>
+          <progress id="next" value="90" max="100">90%</progress>
+        </div>
+        <div class="my-skills">
+          <label for="express">Express.js:</label>
+          <progress id="express" value="90" max="100">90%</progress>
+        </div>
+        <div class="my-skills">
+          <label for="rust">Rust:</label>
+          <progress id="rust" value="40" max="100">40%</progress>
+        </div>
+      </section>
+      <section class="new-section" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="project-wrapper">
+          <a href="#">Nice App One</a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, accusamus. Neque veritatis aspernatur, amet veniam quo perspiciatis, vel magnam voluptas suscipit recusandae, illo ad quia!</p>
+        </div>
+        <div class="project-wrapper">
+          <a href="#">Nice App Two</a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, accusamus. Neque veritatis aspernatur, amet veniam quo perspiciatis, vel magnam voluptas suscipit recusandae, illo ad quia!</p>
+        </div>
+        <div class="project-wrapper">
+          <a href="#">Nice App Three</a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, accusamus. Neque veritatis aspernatur, amet veniam quo perspiciatis, vel magnam voluptas suscipit recusandae, illo ad quia!</p>
+        </div>
+        <div class="project-wrapper">
+          <a href="#">Nice App Four</a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, accusamus. Neque veritatis aspernatur, amet veniam quo perspiciatis, vel magnam voluptas suscipit recusandae, illo ad quia!</p>
+        </div>
+      </section>
+      <section class="new-section" id="contact">
+        <h2 class="title">Let's Get In Touch</h2>
+        <div class="contact-wrapper">
+          <span>Email: </span>
+          <h3>test@testmail.com</h3>
+        </div>
+        <div class="contact-wrapper">
+          <span>Phone: </span>
+          <h3>123 - 4567 - 890</h3>
+        </div>
+        <div class="contact-wrapper">
+          <span>Twitter: </span>
+          <h3>@myhandle</h3>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; <script>document.write(new Date().getFullYear());</script>. Designed by <span>Amarachi Goodness</span></p>
+    </footer>
+  </body>
+</html>
