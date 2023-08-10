@@ -15,11 +15,11 @@
     <header class="header">
       <a href="#" class="logo">Portfolio.</a>
       <nav class="nav">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" class="active" style="--i:1;">Home</a>
+        <a href="#about" style="--i:2;">About</a>
+        <a href="#skills" style="--i:3;">Skills</a>
+        <a href="#projects" style="--i:4;">Projects</a>
+        <a href="#contact" style="--i:5;">Contact</a>
       </nav>
     </header>
     <main class="main">
@@ -27,17 +27,17 @@
         <div class="banner-content">
           <h3>Hello, I am</h3>
           <h1>Amarachi Goodness</h1>
-          <h3>And I'm a <span>Software Engineer</span></h3>
+          <h3>And I'm a <span id="retype-element"></span></h3>
           <p>
             I have over 2 years experience writing code and building solutions
             to make the world a better place by simplifying complex task through
             automation
           </p>
           <div class="social-icons">
-            <a href=""><i class='bx bxl-facebook' ></i></i></a>
-            <a href=""><i class="bx bxl-twitter"></i></a>
-            <a href=""><i class="bx bxl-linkedin"></i></a>
-            <a href=""><i class="bx bxl-instagram"></i></a>
+            <a href="" style="--i:7;"><i class='bx bxl-facebook' ></i></i></a>
+            <a href="" style="--i:8;"><i class="bx bxl-twitter"></i></a>
+            <a href="" style="--i:9;"><i class="bx bxl-linkedin"></i></a>
+            <a href=""style="--i:10;" ><i class="bx bxl-instagram"></i></a>
           </div>
           <button>Download CV</button>
         </div>
@@ -107,5 +107,17 @@
     <footer class="footer">
       <p>&copy; <script>document.write(new Date().getFullYear());</script>. Designed by <span>Amarachi Goodness</span></p>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#retype-element', {
+        strings: ['Software Engineer', 'Technical Writer', 'Graphics Designer'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        smartBackspace: true,
+        loop: true,
+        loopCount: Infinity,
+      });
+    </script>
   </body>
 </html>

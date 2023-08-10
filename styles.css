@@ -53,15 +53,21 @@ body {
   font-weight: 600;
   text-decoration: none;
   color: #fff;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
 }
 
 .nav a {
+  display: inline-block;
   text-decoration: none;
   margin-left: 15px;
   font-weight: 600;
   font-size: 1.1rem;
   color: #fff;
   transition: .3s;
+  opacity: 0;
+  animation: slideTop .5s ease forwards;
+  animation-delay: calc(.2s * var(--i));
 }
 
 .nav a.active,
@@ -91,15 +97,24 @@ body {
   font-size: 3rem;
   margin: 10px 0;
   font-weight: 700;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
 }
 
 .banner-content h3 {
   font-size: 1.6rem;
   font-weight: 700;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: .7s;
 }
 
 .banner-content h3:nth-of-type(2) {
   margin-bottom: 30px;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: .7s;
 }
 
 .banner-content h3 span {
@@ -109,6 +124,9 @@ body {
 .banner-content p {
   font-size: 1rem;
   line-height: 1.7;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1s;
 }
 
 .social-icons a {
@@ -124,6 +142,9 @@ body {
   font-size: 1.7rem;
   margin: 30px 15px 30px 0;
   transition: .5s ease;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(.2s * var(--i));
 }
 
 .social-icons a:hover {
@@ -142,6 +163,9 @@ body {
   font-weight: 700;
   font-size: 1rem;
   box-shadow: 0 0 20px #0ef;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
 }
 
 .banner-img {
@@ -151,6 +175,9 @@ body {
 .banner-img img {
   max-width: 480px;
   border-radius: 50%;
+  opacity: 0;
+  animation: zoomIn 1s ease forwards, floatImg 4s ease-in-out infinite;
+  animation-delay: 2s, 3s;
 }
 
 .about-me {
@@ -274,4 +301,66 @@ progress::-webkit-progress-value {
   html {
     font-size: 12px;
   }
+}
+
+/* Keyframes Animation */
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes floatImg {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-24px); }
+  100% { transform: translateY(0); }
 }
