@@ -9,21 +9,31 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <title>Simple Animated Portfolio</title>
   </head>
   <body>
     <header class="header">
       <a href="#" class="logo">Portfolio.</a>
       <nav class="nav">
-        <a href="#home" class="active" style="--i:1;">Home</a>
-        <a href="#about" style="--i:2;">About</a>
-        <a href="#skills" style="--i:3;">Skills</a>
-        <a href="#projects" style="--i:4;">Projects</a>
-        <a href="#contact" style="--i:5;">Contact</a>
+        <a href="#home" class="active" style="--i: 1">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#skills" style="--i: 3">Skills</a>
+        <a href="#projects" style="--i: 4">Projects</a>
+        <a href="#contact" style="--i: 5">Contact</a>
       </nav>
     </header>
-    <main class="main">
-      <section class="banner" id="home">
+    <section class="banner" id="home">
+      <div class="social-icons">
+        <a href="" style="--i: 7"><i class="bx bxl-facebook"></i></a>
+        <a href="" style="--i: 8"><i class="bx bxl-twitter"></i></a>
+        <a href="" style="--i: 9"><i class="bx bxl-linkedin"></i></a>
+        <a href="" style="--i: 10"><i class="bx bxl-instagram"></i></a>
+      </div>
+      <div class="banner-wrapper">
         <div class="banner-content">
           <h3>Hello, I am</h3>
           <h1>Amarachi Goodness</h1>
@@ -33,22 +43,40 @@
             to make the world a better place by simplifying complex task through
             automation
           </p>
-          <div class="social-icons">
-            <a href="" style="--i:7;"><i class='bx bxl-facebook' ></i></i></a>
-            <a href="" style="--i:8;"><i class="bx bxl-twitter"></i></a>
-            <a href="" style="--i:9;"><i class="bx bxl-linkedin"></i></a>
-            <a href=""style="--i:10;" ><i class="bx bxl-instagram"></i></a>
-          </div>
           <button>Download CV</button>
         </div>
         <div class="banner-img">
-          <img src="./goodness_profile.jpeg" alt="">
+          <img src="./assets/images/goodness_profile.jpeg" alt="" />
         </div>
-      </section>
+      </div>
+    </section>
+    <div class="bubbles">
+      <img src="./assets/images/bubble.png" alt="Bubble" />
+      <img src="./assets/images/bubble.png" alt="Bubble" />
+      <img src="./assets/images/bubble.png" alt="Bubble" />
+      <img src="./assets/images/bubble.png" alt="Bubble" />
+      <img src="./assets/images/bubble.png" alt="Bubble" />
+      <img src="./assets/images/bubble.png" alt="Bubble" />
+      <img src="./assets/images/bubble.png" alt="Bubble" />
+    </div>
+    <main class="main">
       <section class="new-section" id="about">
         <h2 class="title">About Me</h2>
-        <p class="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellendus minima animi quod perferendis libero accusantium, ducimus distinctio provident ipsam harum similique eos! Magnam debitis aspernatur, molestiae beatae fugiat, voluptatum officia itaque perferendis nisi explicabo nemo ipsum corporis saepe natus vero reiciendis harum quae deserunt consequatur tenetur libero autem! Earum.</p>
-        <p class="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellendus minima animi quod perferendis libero accusantium, ducimus distinctio provident ipsam harum similique eos! Magnam debitis aspernatur, molestiae beatae fugiat.</p>
+        <p class="about-me">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+          repellendus minima animi quod perferendis libero accusantium, ducimus
+          distinctio provident ipsam harum similique eos! Magnam debitis
+          aspernatur, molestiae beatae fugiat, voluptatum officia itaque
+          perferendis nisi explicabo nemo ipsum corporis saepe natus vero
+          reiciendis harum quae deserunt consequatur tenetur libero autem!
+          Earum.
+        </p>
+        <p class="about-me">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+          repellendus minima animi quod perferendis libero accusantium, ducimus
+          distinctio provident ipsam harum similique eos! Magnam debitis
+          aspernatur, molestiae beatae fugiat.
+        </p>
       </section>
       <section class="new-section" id="skills">
         <h2 class="title">My Skills:</h2>
@@ -73,19 +101,35 @@
         <h2 class="title">Projects</h2>
         <div class="project-wrapper">
           <a href="#">Nice App One</a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, accusamus. Neque veritatis aspernatur, amet veniam quo perspiciatis, vel magnam voluptas suscipit recusandae, illo ad quia!</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, accusamus. Neque veritatis aspernatur, amet veniam quo
+            perspiciatis, vel magnam voluptas suscipit recusandae, illo ad quia!
+          </p>
         </div>
         <div class="project-wrapper">
           <a href="#">Nice App Two</a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, accusamus. Neque veritatis aspernatur, amet veniam quo perspiciatis, vel magnam voluptas suscipit recusandae, illo ad quia!</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, accusamus. Neque veritatis aspernatur, amet veniam quo
+            perspiciatis, vel magnam voluptas suscipit recusandae, illo ad quia!
+          </p>
         </div>
         <div class="project-wrapper">
           <a href="#">Nice App Three</a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, accusamus. Neque veritatis aspernatur, amet veniam quo perspiciatis, vel magnam voluptas suscipit recusandae, illo ad quia!</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, accusamus. Neque veritatis aspernatur, amet veniam quo
+            perspiciatis, vel magnam voluptas suscipit recusandae, illo ad quia!
+          </p>
         </div>
         <div class="project-wrapper">
           <a href="#">Nice App Four</a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, accusamus. Neque veritatis aspernatur, amet veniam quo perspiciatis, vel magnam voluptas suscipit recusandae, illo ad quia!</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, accusamus. Neque veritatis aspernatur, amet veniam quo
+            perspiciatis, vel magnam voluptas suscipit recusandae, illo ad quia!
+          </p>
         </div>
       </section>
       <section class="new-section" id="contact">
@@ -105,12 +149,18 @@
       </section>
     </main>
     <footer class="footer">
-      <p>&copy; <script>document.write(new Date().getFullYear());</script>. Designed by <span>Amarachi Goodness</span></p>
+      <p>
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        . Designed by <span>Amarachi Goodness</span>
+      </p>
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed('#retype-element', {
-        strings: ['Software Engineer', 'Technical Writer', 'Graphics Designer'],
+      var typed = new Typed("#retype-element", {
+        strings: ["Software Engineer", "Technical Writer", "Graphics Designer"],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,

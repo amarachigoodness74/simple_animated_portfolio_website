@@ -11,8 +11,9 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #1f242d;
+  background-color: #08354d;
   color: #fff;
+  position: relative;
 }
 
 .title {
@@ -29,8 +30,9 @@ body {
 }
 
 .new-section:first-child {
-  padding-top: 20px;
+  padding-top: 80px;
 }
+
 .new-section:last-child {
   padding-bottom: 20px;
 }
@@ -43,9 +45,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 10%;
+  padding: 15px 10%;
   z-index: 100;
-  background-color: #1f242d;
+  background-image: linear-gradient(to right, #01787d, transparent, #037a7e);
 }
 
 .logo {
@@ -73,17 +75,64 @@ body {
 .nav a.active,
 .nav a:active,
 .nav a:hover {
-  color: #0ef;
+  color: #0c1a3a;
 }
 
 .main {
-  padding: 50px 10%;
+  padding: 0 10% 50px;
 }
 
 .banner {
-  position: relative;
   width: 100%;
   height: 100vh;
+  background-image: url(assets/images/background.png);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons {
+  width: 40px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #01787d, transparent, #092442);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  color: #0ef;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin: 20px auto;
+  transition: .5s ease;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+}
+
+.social-icons a:hover {
+  background-color: #0ef;
+  color: #1f242d;
+  box-shadow: 0 0 20px #0ef;
+}
+
+.banner-wrapper {
+  width: calc(100% - 40px);
+  height: 100%;
+  padding: 50px 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -118,7 +167,7 @@ body {
 }
 
 .banner-content h3 span {
-  color: #0ef; 
+  color: #0c1a3a; 
 }
 
 .banner-content p {
@@ -127,30 +176,7 @@ body {
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1s;
-}
-
-.social-icons a {
-  display: inline-flex;
-  width: 40px;
-  height: 40px;
-  text-decoration: none;
-  color: #0ef;
-  border: 2px solid #0ef;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.7rem;
-  margin: 30px 15px 30px 0;
-  transition: .5s ease;
-  opacity: 0;
-  animation: slideLeft 1s ease forwards;
-  animation-delay: calc(.2s * var(--i));
-}
-
-.social-icons a:hover {
-  background-color: #0ef;
-  color: #1f242d;
-  box-shadow: 0 0 20px #0ef;
+  margin-bottom: 30px;
 }
 
 .banner-content button {
@@ -166,6 +192,7 @@ body {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
+  cursor: pointer;
 }
 
 .banner-img {
@@ -173,11 +200,73 @@ body {
 }
 
 .banner-img img {
-  max-width: 480px;
+  max-width: 800px;
   border-radius: 50%;
   opacity: 0;
   animation: zoomIn 1s ease forwards, floatImg 4s ease-in-out infinite;
   animation-delay: 2s, 3s;
+}
+
+.bubbles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bubbles img {
+  width: 50px;
+  opacity: 0;
+  animation: bubble 7s linear infinite;
+}
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  10% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+.bubbles img:nth-child(1) {
+  animation-delay: 2s;
+  width: 35px;
+}
+
+.bubbles img:nth-child(2) {
+  animation-delay: 3.5s;
+  width: 20px;
+}
+
+.bubbles img:nth-child(3) {
+  animation-delay: 6s;
+  width: 40px;
+}
+
+.bubbles img:nth-child(4) {
+  animation-delay: 2.5s;
+  width: 30px;
+}
+
+.bubbles img:nth-child(5) {
+  animation-delay: .3s;
+}
+
+.bubbles img:nth-child(6) {
+  animation-delay: 3.8s;
+  width: 20px;
+}
+
+.bubbles img:nth-child(7) {
+  animation-delay: 1.7s;
+  width: 45px;
 }
 
 .about-me {
